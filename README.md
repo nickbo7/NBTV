@@ -1,2 +1,2 @@
 # NBTV-
-NB's quiplash-esque web game. Built with Node.js and socket.io. 
+NB's Quiplash-esque web game. Built with Node.js and socket.io.
