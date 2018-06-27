@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NB.TV</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>    
+      <div id='topNav'><i id="settings" class="material-icons">&#xe8b8;</i></div>
+        <div id='gameForm'>
+            <div class="infoPane" id="info">
+                <p id="roomid"></p>
+                <p id="host"></p>  
+                <ol id="playerList"></ol>
+            </div>
+            <div id="card">
+                <label id="prompt" class="text-signin"></label>
+                <input id="response" placeholder="..." style="text-transform:uppercase;" maxlength="32" value="" autocapitalize="off" autocorrect="off" autocomplete="off" type="text">
+                <div id="vote">
+                    <ul id="vote-buttons"></ul>
+                </div>
+            </div>
+            <div id="scoreCard">
+                <ul id="scores"></ul>
+            </div>
+            <div id="winner"></div>
+            <div id="timer">
+                <div id="myBar"></div>
+            </div>
+        </div>
+        <div id='entryForm'>        
+
+                <label id="roomLabel" class="text-signin">Room ID</label>
+                <input name="roomcode" id="roomcode" placeholder="ENTER 4-LETTER CODE" style="text-transform:uppercase;" maxlength="4" value="" autocapitalize="off" autocorrect="off" autocomplete="off" type="text">
+
+                <label id="nameLabel" class="text-signin">Name</label>
+                <input name="name" id="username" autofocus placeholder="ENTER YOUR NAME" style="text-transform:uppercase;" maxlength="12" value="" autocapitalize="off" autocorrect="off" autocomplete="new-name" type="text">
+
+        </div>
+        <div class="push"></div>
+        <footer class="buttonFooter">
+            <div id="homeFooter">
+                <input value="JOIN" id="button-join" type="submit">
+                <input value="NEW" id="button-new" type="submit">
+            </div>
+            <div id="gameFooter">
+                <input value="START" id="button-start" type="submit">
+                <input value="SUBMIT" id="button-submit" type="submit">
+                <input value="RESTART" id="button-restart" type="submit">
+            </div>
+        </footer>
+  </body>
+    <script src="/static/client.js"></script>
+</html>
