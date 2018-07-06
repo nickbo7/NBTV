@@ -5,4 +5,4 @@ See pic:
 [[https://github.com/nickbo7/NBTV/tree/master/static/example.png]]
 
 
-![Screenshots](example.png)
+![Screenshots](https://github.com/nickbo7/NBTV/tree/master/static/example.png)
